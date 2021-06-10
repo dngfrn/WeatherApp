@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:textSize="22dp"
             android:textStyle="bold"
+            android:textColor="@color/white"
             android:text="date"/>
         <TextView
             android:id="@+id/tv_maxtemp"
@@ -26,6 +27,7 @@
             android:layout_height="wrap_content"
             android:textSize="19dp"
             android:textStyle="bold"
+            android:textColor="@color/white"
             android:text="maxtemp"/>
         <TextView
             android:id="@+id/tv_mintemp"
@@ -33,6 +35,7 @@
             android:layout_height="wrap_content"
             android:textSize="19dp"
             android:textStyle="bold"
+            android:textColor="@color/white"
             android:text="mintemp"/>
         <TextView
             android:id="@+id/tv_avgtemp"
@@ -40,6 +43,7 @@
             android:layout_height="wrap_content"
             android:textSize="19dp"
             android:textStyle="bold"
+            android:textColor="@color/white"
             android:text="avgtemp"/>
         <TextView
             android:id="@+id/tv_totalprecip"
@@ -47,11 +51,13 @@
             android:layout_height="wrap_content"
             android:textSize="19dp"
             android:textStyle="bold"
+            android:textColor="@color/white"
             android:text="precip"/>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list_hour"
+        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem="@layout/activity_hour_forecast"/>

@@ -35,9 +35,9 @@ public class DetailForecastActivity extends AppCompatActivity {
         tv_totalprecip = findViewById(R.id.tv_totalprecip);
 
         tv_date.setText(forecastDay.getDate());
-        tv_maxtemp.setText("Max Temp: "+Double.toString(forecastDay.getDay().getMaxtemp_c()));
-        tv_avgtemp.setText("Avg Temp: "+Double.toString(forecastDay.getDay().getAvgtemp_c()));
-        tv_mintemp.setText("Min Temp: "+Double.toString(forecastDay.getDay().getMintemp_c()));
+        tv_maxtemp.setText("Max Temp : "+Double.toString(forecastDay.getDay().getMaxtemp_c()));
+        tv_avgtemp.setText("Avg Temp : "+Double.toString(forecastDay.getDay().getAvgtemp_c()));
+        tv_mintemp.setText("Min Temp : "+Double.toString(forecastDay.getDay().getMintemp_c()));
         tv_totalprecip.setText("Total Prec: "+Double.toString(forecastDay.getDay().getTotalprecip_mm()));
 
         listhour=forecastDay.getHour();

@@ -61,15 +61,15 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapter.O
                 .enqueue(new Callback<WeatherModel>() {
                     @Override
                     public void onResponse(Call<WeatherModel> call, Response<WeatherModel> response) {
-                        tv_location.setText("Location: "+response.body().getLocation().getName());
-                        tv_wind.setText("Wind: "+Double.toString(response.body().getCurrent().getWind_kph()));
-                        tv_pressure.setText("Pressure: "+Double.toString(response.body().getCurrent().getPressure_mb()));
-                        tv_precip.setText("Precipitation: "+Double.toString(response.body().getCurrent().getPrecip_mm()));
-                        tv_humidity.setText("Humidity: "+Double.toString(response.body().getCurrent().getHumidity()));
-                        tv_cloud.setText("Cloud: "+Double.toString(response.body().getCurrent().getCloud()));
-                        tv_gust.setText("Gust: "+Double.toString(response.body().getCurrent().getGust_kph()));
+                        tv_location.setText(response.body().getLocation().getName());
+                        tv_wind.setText(Double.toString(response.body().getCurrent().getWind_kph()));
+                        tv_pressure.setText(Double.toString(response.body().getCurrent().getPressure_mb()));
+                        tv_precip.setText(Double.toString(response.body().getCurrent().getPrecip_mm()));
+                        tv_humidity.setText(Double.toString(response.body().getCurrent().getHumidity()));
+                        tv_cloud.setText(Double.toString(response.body().getCurrent().getCloud()));
+                        tv_gust.setText(Double.toString(response.body().getCurrent().getGust_kph()));
 
-                        tv_temp.setText("Temperature: "+Double.toString(response.body().getCurrent().getTemp_c()));
+                        tv_temp.setText(Double.toString(response.body().getCurrent().getTemp_c()));
                     }
 
                     @Override
